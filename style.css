@@ -1,0 +1,65 @@
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+text-align:center;
+}
+
+#login,#loading,#prank{
+margin-top:120px;
+display:none;
+}
+
+#login{
+display:block;
+}
+
+input{
+display:block;
+margin:10px auto;
+padding:10px;
+width:220px;
+border:none;
+border-radius:5px;
+}
+
+button{
+padding:10px 25px;
+cursor:pointer;
+background:#22c55e;
+border:none;
+font-weight:bold;
+border-radius:5px;
+}
+
+#msg{
+color:#f87171;
+}
+
+/* loading bar */
+.bar{
+width:220px;
+height:15px;
+border:2px solid white;
+margin:20px auto;
+overflow:hidden;
+}
+
+.bar::after{
+content:"";
+width:0%;
+height:100%;
+display:block;
+background:white;
+animation:load 3s linear forwards;
+}
+
+@keyframes load{
+100%{width:100%;}
+}
+
+img{
+width:300px;
+border-radius:15px;
+}
